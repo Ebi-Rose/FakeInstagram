@@ -14,23 +14,31 @@
 		<div class ="content">
 			<div class="main">
 				<div class="left_column" id="content-desktop">
-					<img src="images/pic.jpg" id="mainpic">
+				<!--	<img src="images/pic.jpg" id="mainpic"> -->
+					<video  width="320" src="vid.mp4" id="mainpic" poster="" preload autoplay loop muted></video>
+					<script> 
+					    document.getElementById('mainpic').play(); 
+					</script> 
 				</div>
 				<div class="right_column" id="content-mobile">
-					<div class="top_Content">
+					<div class="topContent">
 						<img src="images/capture.jpg" class="fullpic">
+
 						<a href="https://www.facebook.com/login.php"><img src="images/fbookBtn.jpg" class="fullpic"></a>
-						<img src="images/or.jpg" class="fullpic">		   <form id="form1" name="form1">
+						<img src="images/or.jpg" class="fullpic">		  
+						 <form id="form1" name="form1">
 
 							<div class="txtBox">
-								  <input type="text" name="contact" placeholder="Mobile Number or Email" ><br>
-								  <input type="text" name="name" placeholder="Full Name" required=""><br>
-								  <input type="text" name="uname" placeholder="Username"><br>
-								  <input type="password" name="pass" placeholder="password"><br>
+								  <input type="text" name="contact" placeholder="Mobile Number or Email" required="required" class=tbVal><br><br>
+								  <input type="text" name="name" placeholder="Full Name" required="required" class="tbVal"><br><br>
+								  <input type="text" name="uname" placeholder="Username" required="required" class="tbVal"><br><br>
+								  <input type="password" name="pass" placeholder="password" class="tbVal"><br><br>
+								  <input type="image" src="images/nextBtn.jpg "name="submit" class="fullpic">
+								
 
 							</div>
+							
 						</form>
-						<img src="images/nextBtn.jpg" class="fullpic" onclick="">
 						<img src="images/terms.jpg" class="fullpic">
 					</div>
 					<div class="bottom_Content">
@@ -48,22 +56,24 @@
 			<div class ="mini_Footer">	
 		</div>
 		<div class="footer" id="content-mobile">
-				<a href="">ABOUT US</a>
-				<a href="">SUPPORT</a>
-				<a href="">BLOG</a>
-				<a href="">PRESS</a>
-				<a href="">API</a>
-				<a href="">JOBS</a>
-				<a href="">PRIVACY</a>
-				<a href="">TERMS</a>
+			<nav id="navigation">
+				<a href="https://www.instagram.com/about/us/">ABOUT US</a>
+				<a href="https://help.instagram.com/">SUPPORT</a>
+				<a href="http://blog.instagram.com/">BLOG</a>
+				<a href="https://instagram-press.com/">PRESS</a>
+				<a href="https://www.instagram.com/developer/">API</a>
+				<a href="https://www.instagram.com/about/jobs/">JOBS</a>
+				<a href="https://www.instagram.com/legal/privacy/">PRIVACY</a>
+				<a href="https://www.instagram.com/legal/terms/">TERMS</a>
 
-				<a href="">DIRECTORY</a>
-				<a href="">PROFILES</a>
-				<a href="">HASHTAGS</a>
+				<a href="https://www.instagram.com/explore/locations/">DIRECTORY</a>
+				<a href="https://www.instagram.com/directory/profiles/">PROFILES</a>
+				<a href="https://www.instagram.com/directory/hashtags/">HASHTAGS</a>
 				<a href="">LANGUAGE</a>
-				
-			
-				<p>@Instagram</p>
+			</nav>	
+			<div id="copyright">
+				<img src="images/copyright.jpg">
+			</div>
 		</div>
 </div>
 </body>
